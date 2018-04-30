@@ -15,7 +15,10 @@ class Data
         $sql = "SELECT * FROM tb_data";
         $query = $this->db->prepare($sql);
         $query->execute();
-        return $query->fetchAll();
+        $return = $query->fetchAll(PDO::FETCH_OBJ);
+
+
+        return $return;
 
     }
 }

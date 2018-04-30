@@ -12,6 +12,7 @@ class Application
     { 
         $this->splitUrl();
         
+        
         if (!$this->url_controller) {
             
             require APP . 'Controller/HomeController.php';
